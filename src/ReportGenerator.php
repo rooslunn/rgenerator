@@ -22,9 +22,9 @@ final class ReportGenerator
         {
             $report = new Report();
 
-            $report->addParr($header);
-            $report->addParr(new ReportBody("Body for Report $i"));
-            $report->addParr($footer);
+            $report->addPart($header);
+            $report->addPart(new ReportBody("Body for Report $i"));
+            $report->addPart($footer);
 
             echo "==> Generating Report $i\n";
             echo $report->render();

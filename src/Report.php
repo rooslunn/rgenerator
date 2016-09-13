@@ -13,7 +13,7 @@ final class Report
 {
     protected $parts = [];
 
-    public function addParr(ReportPartInterface $part)
+    public function addPart(ReportPartInterface $part)
     {
         $this->parts[] = $part;
     }
